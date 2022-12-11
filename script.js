@@ -2,10 +2,11 @@ const gridContainer = document.querySelector("#grid-container");
 const grids = document.createElement("div");
 const range = document.getElementById('size');
 const rangeLabel = document.querySelector('label');
+const gridSizes = [ 4, 8, 16, 32, 64 ];
 
 function updateRange() {
     console.log(range.value)
-
+    document.getElementById('grid-size').textContent = `${gridSizes[range.value]} x ${gridSizes[range.value]}`
 }
 
 grids.classList.add("grid")
