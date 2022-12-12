@@ -11,9 +11,11 @@
 </head>
 <body>
     <h1>Etch a Sketch</h1>
-    <label for="size">Size: <span id="grid-size">4 x 4</span></label>
-    <input type="range" id="size" name="size" min="0" max="4" value="0" onchange="updateRange();">
-    <div id="grid-container">
+    <label for="size">Size: <span id="grid-size"></span></label>
+    <input type="range" id="size" name="size" min="0" max="3" value="0" onchange="updateRange();">
+    <button id="grid-update" onclick="updateGrid()">Update grid</button>
+    <div id="main">
+        <div id="grid-container"></div>
     </div>
 </body>
 </html>
